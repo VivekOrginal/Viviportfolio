@@ -11,6 +11,7 @@ import { BlurIn } from "../reveal-animations";
 import ScrollDownIcon from "../scroll-down-icon";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 import { config } from "@/data/config";
+import { MorphingText } from "@/components/ui/morphing-text";
 
 function ShimmerButton({ className, children, href, target }: { className?: string; children: React.ReactNode; href: string; target?: string }) {
   const rippleRef = useRef<HTMLSpanElement>(null);
@@ -83,21 +84,17 @@ const HeroSection = () => {
                 <BlurIn delay={1}>
                   <Tooltip delayDuration={300}>
                     <TooltipTrigger asChild>
-                      <h1 className={cn("font-thin text-6xl text-black ml-1 text-left", "cursor-default font-display sm:text-7xl md:text-9xl")}>
-                        {config.author.split(" ")[0]}
-                        <br className="md:block hidden" />
-                        {config.author.split(" ")[1]}
-                      </h1>
+                      <div className="ml-1">
+                        <MorphingText
+                          texts={["Vivek PS", "BCA Student", "AI Enthusiast", "Vivek PS"]}
+                          className="text-left text-black h-20 md:h-32"
+                        />
+                      </div>
                     </TooltipTrigger>
                   </Tooltip>
                 </BlurIn>
-                <BlurIn delay={1.2}>
-                  <p className={cn("md:self-start md:mt-4 font-thin text-md text-black ml-3", "cursor-default font-display sm:text-xl md:text-xl whitespace-nowrap")}>
-                    AI Enthusiast | VIVEK PS
-                  </p>
-                </BlurIn>
               </div>
-              <div className="mt-8 md:ml-2 flex flex-col gap-3">
+              <div className="mt-32 md:ml-2 flex flex-col gap-3">
                 <div className="md:self-start flex gap-3">
                   <ShimmerButton href="#contact" className="px-5 py-2 text-sm font-medium">
                     Hire Me

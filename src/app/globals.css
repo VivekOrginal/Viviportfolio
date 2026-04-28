@@ -7,6 +7,14 @@ body {
   overflow-x: hidden;
 }
 
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.animate-blink-cursor {
+  animation: blink-cursor 1s step-end infinite;
+}
+
 * {
   scrollbar-width: none;
   -ms-overflow-style: none;

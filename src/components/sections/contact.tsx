@@ -24,10 +24,9 @@ const ContactSection = () => {
           {/* Left - Info */}
           <div className="flex flex-col gap-8 p-8 rounded-2xl border border-black/20 bg-[#222022] backdrop-blur-md">
             <div>
-              <h3 className="text-2xl font-light text-white mb-2">Say Hello 👋</h3>
+              <h3 className="text-2xl font-light text-white mb-2">Get in Touch</h3>
               <p className="text-white text-sm leading-relaxed">
-                Have a project in mind or just want to connect? Feel free to reach out.
-                I&apos;m always open to discussing new opportunities and ideas.
+                If you have a project in mind, an idea to explore, or an opportunity to discuss, feel free to reach out. I&apos;m always open to meaningful collaborations and conversations that lead to impactful results.
               </p>
             </div>
 
@@ -38,7 +37,6 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-xs text-white uppercase tracking-wider">Email</p>
-                  <p className="text-white text-sm">{config.email}</p>
                 </div>
               </a>
 
@@ -48,7 +46,6 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-xs text-white uppercase tracking-wider">LinkedIn</p>
-                  <p className="text-white text-sm">vivek-p-s-158817282</p>
                 </div>
               </a>
 
@@ -58,7 +55,6 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="text-xs text-white uppercase tracking-wider">GitHub</p>
-                  <p className="text-white text-sm">VivekOrginal</p>
                 </div>
               </a>
             </div>

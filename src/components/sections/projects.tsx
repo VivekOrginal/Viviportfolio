@@ -174,10 +174,10 @@ const ProjectsSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="hidden md:flex flex-col items-end"
           >
-            <span className="text-6xl font-black text-black/10 dark:text-white/10">
+            <span className="text-6xl font-black text-black">
               <Counter value={projects.length} />
             </span>
-            <span className="text-xs text-black/30 dark:text-white/30 uppercase tracking-widest">works</span>
+            <span className="text-xs text-black/30 uppercase tracking-widest">works</span>
           </motion.div>
         </div>
 
